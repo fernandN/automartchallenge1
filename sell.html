@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+	<head>
+		<title>AutoMart : Sell your car</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+		<script>
+			// Code Javascript
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<a href="sign_up.html" class="btn right">Sign up</a>
+			<a href="sign_in.html" class="btn right">Sign in</a>
+			<a href="sell.html" class="btn right">Sell your car</a>
+			<a href="dashboard.html" class="btn right">Dashboard</a>
+			<a href="index.html" class="btn right">Home</a>
+			<h1>AutoMart - Sell your car</h1>
+		</div>
+		<div id="content">
+			<div id="sign_up">
+			<form action="" method="post">
+				Upload car picture:
+				<input type="file" />
+			</form>
+				<table>
+					<tr>
+						<td>Price: </td>
+						<td><input type="number" /></td>
+					</tr>
+					<tr>
+						<td>Manufacturer: </td>
+						<td><input type="text" /></td>
+					</tr>
+					<tr>
+						<td>Car state: </td>
+						<td>
+							<select name="state">
+								<option value="New">New</option>
+								<option value="Used">Used</option>
+							</select>
+						</td>
+						<td>
+							<input type="submit" value="Post the car" class="btn" />
+						</td>
+					</tr>
+				</table>
+				<div id="msg"></div>
+			</div>
+		</div>
+	</body>
+</html>

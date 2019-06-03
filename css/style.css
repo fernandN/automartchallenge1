@@ -1,0 +1,65 @@
+body{
+	font-family: Tahoma;
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid gray;
+	border-radius: 50px;
+}
+input[type=text], input[type=submit], input[type=password], input[type=email], input[type=number], select
+{
+	padding: 5px;
+	font-size: 18px;
+	border-radius: 10px;
+}
+.img{
+	border-radius: 20px;
+}
+fieldset{
+	padding: 20px;
+	margin: 10px;
+	border-radius: 20px;
+}
+#header{
+	padding: 20px;
+	margin: 30px;
+	border: 1px solid gray;
+	border-radius: 20px;
+	background-color: rgb(230, 230, 230);
+}
+#msg{
+	padding: 20px;
+	margin: 30px;
+	border: 1px solid gray;
+	border-radius: 20px;
+}
+#content{
+	padding: 20px;
+	margin: 30px;
+	border: 1px solid gray;
+	border-radius: 20px;
+	background-color: rgb(230, 230, 230);
+}
+.round{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+}
+.btn{
+	cursor: pointer;
+	padding: 10px;
+	margin: 2px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	text-decoration: none;
+	
+
+}
+.btn:hover{
+	background-color: gray;
+	color: white;
+}
+.right{
+	float: right;
+}
+
+	

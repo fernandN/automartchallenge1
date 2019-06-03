@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+	<head>
+		<title>AutoMart : Sign out</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+		<script>
+			function sign_up()
+			{
+				if(document.getElementById("first_name").value == ""){
+					document.getElementById("msg").innerHTML = "<img src='img/invalid.png' class='round' /> Please insert your first name !!!";
+				}
+				else{
+					if(document.getElementById("last_name").value == ""){
+						document.getElementById("msg").innerHTML = "<img src='img/invalid.png' class='round' /> Please insert your last name !!!";
+					}
+					else{
+						if(document.getElementById("username").value == ""){
+							document.getElementById("msg").innerHTML = "<img src='img/invalid.png' class='round' /> Please insert your username !!!";
+						}
+						else{
+							if(document.getElementById("password").value == ""){
+								document.getElementById("msg").innerHTML = "<img src='img/invalid.png' class='round' /> Please insert your password !!!";
+							}
+							else{
+								if(document.getElementById("password_2").value == ""){
+									document.getElementById("msg").innerHTML = "<img src='img/invalid.png' class='round' /> Please confirm your password !!!";
+								}
+								else{
+									if(document.getElementById("email").value == ""){
+										document.getElementById("msg").innerHTML = "<img src='img/invalid.png' class='round' /> Please insert your email !!!";
+									}
+									else{
+										var password = document.getElementById("password").value;
+										var password_2	= document.getElementById("password_2").value;
+										if(password != password_2){
+											document.getElementById("msg").innerHTML = "<img src='img/invalid.png' class='round' /> The two passwords don't match !!!";
+										}
+										else{
+											document.getElementById("msg").innerHTML = "<img src='img/cool.png' class='round' /> Account created successfully !!!";
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<a href="sign_up.html" class="btn right">Sign up</a>
+			<a href="sign_in.html" class="btn right">Sign in</a>
+			<a href="sell.html" class="btn right">Sell your car</a>
+			<a href="dashboard.html" class="btn right">Dashboard</a>
+			<a href="index.html" class="btn right">Home</a>
+			<h1>AutoMart - Sign up</h1>
+		</div>
+		<div id="content">
+			<table>
+				<tr>
+					<td>First name: </td>
+					<td><input type="text" id="first_name" /></td>
+				</tr>
+				<tr>
+					<td>Last name: </td>
+					<td><input type="text" id="last_name" /></td>
+				</tr>
+				<tr>
+					<td>User name: </td>
+					<td><input type="text" id="username" /></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="password" id="password" /></td>
+					<td>Confirm your password: </td>
+					<td><input type="password" id="password_2" /></td>
+				</tr>
+				<tr>
+					<td>E-mail: </td>
+					<td><input type="email" id="email" /></td>
+					<td><input type="submit" onclick="sign_up()" value="Sign up" class="btn" /></td>
+				</tr>
+			</table>
+			<div id="msg"></div>
+		</div>
+	</body>
+</html>
