@@ -7,36 +7,36 @@
 			function sign_up()
 			{
 				if(document.getElementById("first_name").value == ""){
-					document.getElementById("msg").innerHTML = "<img src='invalid.jpg' class='round' /> Please insert your first name !!!";
+					document.getElementById("msg").innerHTML = "<img src='invalid.png' class='round' /> Please insert your first name !!!";
 				}
 				else{
 					if(document.getElementById("last_name").value == ""){
-						document.getElementById("msg").innerHTML = "<img src='invalid.jpg' class='round' /> Please insert your last name !!!";
+						document.getElementById("msg").innerHTML = "<img src='invalid.png' class='round' /> Please insert your last name !!!";
 					}
 					else{
 						if(document.getElementById("username").value == ""){
-							document.getElementById("msg").innerHTML = "<img src='invalid.jpg' class='round' /> Please insert your username !!!";
+							document.getElementById("msg").innerHTML = "<img src='invalid.png' class='round' /> Please insert your username !!!";
 						}
 						else{
 							if(document.getElementById("password").value == ""){
-								document.getElementById("msg").innerHTML = "<img src='invalid.jpg' class='round' /> Please insert your password !!!";
+								document.getElementById("msg").innerHTML = "<img src='invalid.png' class='round' /> Please insert your password !!!";
 							}
 							else{
 								if(document.getElementById("password_2").value == ""){
-									document.getElementById("msg").innerHTML = "<img src='invalid.jpg' class='round' /> Please confirm your password !!!";
+									document.getElementById("msg").innerHTML = "<img src='invalid.png' class='round' /> Please confirm your password !!!";
 								}
 								else{
 									if(document.getElementById("email").value == ""){
-										document.getElementById("msg").innerHTML = "<img src='invalid.jpg' class='round' /> Please insert your email !!!";
+										document.getElementById("msg").innerHTML = "<img src='invalid.png' class='round' /> Please insert your email !!!";
 									}
 									else{
 										var password = document.getElementById("password").value;
 										var password_2	= document.getElementById("password_2").value;
 										if(password != password_2){
-											document.getElementById("msg").innerHTML = "<img src='invalid.jpg' class='round' /> The two passwords don't match !!!";
+											document.getElementById("msg").innerHTML = "<img src='invalid.png' class='round' /> The two passwords don't match !!!";
 										}
 										else{
-											document.getElementById("msg").innerHTML = "<img src='cool.jpg' class='round' /> Account created successfully !!!";
+											document.getElementById("msg").innerHTML = "<img src='cool.png' class='round' /> Account created successfully !!!";
 										}
 									}
 								}
