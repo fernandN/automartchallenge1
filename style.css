@@ -25,6 +25,7 @@ fieldset{
 	border: 1px solid gray;
 	border-radius: 20px;
 	background-color: rgb(255, 128, 64);
+	color: white;
 }
 #msg{
 	padding: 20px;
@@ -38,6 +39,7 @@ fieldset{
 	border: 1px solid gray;
 	border-radius: 20px;
 	background-color: rgb(255, 128, 64);
+	color: white;
 }
 .round{
 	width: 20px;
